@@ -244,8 +244,5 @@ footer {
   }
 }
 
-.hero,
-.hero * {
-  pointer-events: auto;
-}
+
 
