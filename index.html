@@ -8,21 +8,13 @@
 </head>
 <body>
 
-<header class="header">
+<header>
   <nav class="nav">
-    <!-- Logo links to main page -->
     <a href="index.html" class="logo">ScholarsBridge</a>
 
-    <!-- Mobile menu button -->
-    <div class="nav-actions">
-      <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        🌓
-      </button>
-
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
-        ☰
-      </button>
-    </div>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+      ☰
+    </button>
 
     <ul id="nav-menu">
       <li><a href="index.html">Home</a></li>
@@ -31,7 +23,6 @@
       <li><a href="resources.html">Resources</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="index-th.html">TH</a></li>
-      <li><button class="theme-btn" onclick="toggleTheme()">🌓</button></li>
     </ul>
   </nav>
 </header>
@@ -47,31 +38,34 @@
 
 <section id="services" class="section">
   <h2>Our Services</h2>
+
   <div class="cards">
     <div class="card">
-      <img src="images/service-starter.jpg">
+      <img src="images/service-starter.jpg" alt="">
       <h3>Consultation</h3>
-      <p>Don't know where to begin? Let's start with our short consultation</p>
-      <p class="price"> starting at 1,000 THB</p>
+      <p>Not sure where to begin? Start with a short consultation.</p>
+      <p class="price">Starting at 1,000 THB</p>
     </div>
-  <div class="cards">
+
     <div class="card">
-      <img src="images/service-starter.jpg">
+      <img src="images/service-starter.jpg" alt="">
       <h3>Starter Package</h3>
-      <p>Major selection, university list, and admission roadmap</p>
-      <p class="price"> starting at 9,500 THB</p>
+      <p>Major selection, university list, and admission roadmap.</p>
+      <p class="price">Starting at 9,500 THB</p>
     </div>
+
     <div class="card">
-      <img src="images/service-premium.jpg">
+      <img src="images/service-premium.jpg" alt="">
       <h3>Premium Application</h3>
-      <p>Essays, interviews, scholarships, full application support</p>
-      <p class="price"> starting at 39,500 THB</p>
+      <p>Essays, interviews, scholarships, full application support.</p>
+      <p class="price">Starting at 39,500 THB</p>
     </div>
+
     <div class="card">
-      <img src="images/service-visit.jpg">
+      <img src="images/service-visit.jpg" alt="">
       <h3>Campus Visit Planning</h3>
-      <p>Custom U.S. university visit itinerary & safety guidance</p>
-      <p class="price"> starting at 15,000 THB</p>
+      <p>Custom U.S. university visits with safety guidance.</p>
+      <p class="price">Starting at 15,000 THB</p>
     </div>
   </div>
 </section>
@@ -79,18 +73,16 @@
 <section id="about" class="section alt">
   <h2>About ScholarsBridge</h2>
   <p>
-    Founded by Dr. Aurapat Ngamnithiporn and Dr. Nuttapon Pombubpa, U.S.-trained PhD,
-    ScholarsBridge provides honest, research-driven guidance for
-    students pursuing U.S. education — especially in STEM fields.
+    Founded by U.S.-trained PhDs, ScholarsBridge provides honest,
+    research-driven guidance for families pursuing U.S. education,
+    especially in STEM fields.
   </p>
 </section>
 
 <section id="contact" class="section">
   <h2>Contact</h2>
-  <p>Email: hello@scholarsbridge.co</p>
-  <p>LINE: @ScholarsBridge</p>
   <div class="cta-group">
-    <a href="mailto:hello@scholardige.co" class="btn">Email</a>
+    <a href="mailto:hello@scholarsbridge.co" class="btn">Email</a>
     <a href="https://line.me/R/ti/p/@YOUR_LINE_ID" class="btn">LINE</a>
     <a href="https://facebook.com/YOUR_PAGE" class="btn">Facebook</a>
   </div>
@@ -99,6 +91,13 @@
 <footer>
   © 2025 ScholarsBridge. All rights reserved.
 </footer>
-<script src="script.js"></script>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('nav-menu');
+  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+}
+</script>
+
 </body>
 </html>
