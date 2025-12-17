@@ -8,14 +8,22 @@
 </head>
 <body>
 
-<header>
+<header class="header">
   <nav class="nav">
-    <div class="logo">ScholarsBridge</div>
-    <ul>
+    <!-- Logo links to main page -->
+    <a href="index.html" class="logo">Scholardige</a>
+
+    <!-- Mobile menu button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="index-th.html">TH</a></li>
+      <li><button class="theme-btn" onclick="toggleTheme()">🌓</button></li>
     </ul>
   </nav>
 </header>
@@ -23,9 +31,9 @@
 <section class="hero">
   <img src="images/hero-campus.jpg" alt="US Campus">
   <div class="hero-text">
-    <h1>Your Bridge to U.S. Education</h1>
-    <p>Personalized U.S. college consulting for Thai families</p>
-    <a href="#contact" class="btn">Book Free Consultation</a>
+    <h1>Your Trusted Bridge to U.S. Education</h1>
+    <p>Personalized U.S. college consulting for families planning U.S. education</p>
+    <a href="#contact" class="btn">Book Consultation</a>
   </div>
 </section>
 
@@ -34,21 +42,28 @@
   <div class="cards">
     <div class="card">
       <img src="images/service-starter.jpg">
+      <h3>Consultation</h3>
+      <p>Don't know where to begin? Let's start with our short consultation</p>
+      <p class="price"> starting at 1,000 THB</p>
+    </div>
+  <div class="cards">
+    <div class="card">
+      <img src="images/service-starter.jpg">
       <h3>Starter Package</h3>
       <p>Major selection, university list, and admission roadmap</p>
-      <p class="price">9,900 THB</p>
+      <p class="price"> starting at 9,500 THB</p>
     </div>
     <div class="card">
       <img src="images/service-premium.jpg">
       <h3>Premium Application</h3>
       <p>Essays, interviews, scholarships, full application support</p>
-      <p class="price">39,000–59,000 THB</p>
+      <p class="price"> starting at 39,500 THB</p>
     </div>
     <div class="card">
       <img src="images/service-visit.jpg">
       <h3>Campus Visit Planning</h3>
       <p>Custom U.S. university visit itinerary & safety guidance</p>
-      <p class="price">15,000 THB</p>
+      <p class="price"> starting at 15,000 THB</p>
     </div>
   </div>
 </section>
@@ -56,7 +71,7 @@
 <section id="about" class="section alt">
   <h2>About ScholarsBridge</h2>
   <p>
-    Founded by Dr. Nuttapon Pombubpa, a U.S.-trained PhD,
+    Founded by Dr. Aurapat Ngamnithiporn and Dr. Nuttapon Pombubpa, U.S.-trained PhD,
     ScholarsBridge provides honest, research-driven guidance for
     students pursuing U.S. education — especially in STEM fields.
   </p>
@@ -71,6 +86,6 @@
 <footer>
   © 2025 ScholarsBridge. All rights reserved.
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
